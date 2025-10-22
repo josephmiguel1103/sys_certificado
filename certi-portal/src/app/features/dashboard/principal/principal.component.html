@@ -1,0 +1,25 @@
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <!-- Header -->
+    <header class="dashboard-header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1>Sistema de Certificados</h1>
+          <div class="welcome-message">
+            <span class="greeting">{{ getGreeting() }},</span>
+            <span class="user-name">{{ currentUser()?.name }}</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

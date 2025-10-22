@@ -1,0 +1,123 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7fafc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 32px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+}
+
+.welcome-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.greeting {
+  font-size: 16px;
+  color: #4a5568;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.time-info {
+  text-align: right;
+}
+
+.current-time {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+  font-variant-numeric: tabular-nums;
+}
+
+.current-date {
+  font-size: 14px;
+  color: #718096;
+  text-transform: capitalize;
+}
+
+.page-content {
+  flex: 1;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 70px;
+  }
+
+  .dashboard-header {
+    padding: 16px 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .header-left h1 {
+    font-size: 24px;
+  }
+
+  .time-info {
+    text-align: left;
+  }
+
+  .page-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .page-content {
+    padding: 16px;
+  }
+}
